@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <meta name="author" content="Mohammed Ali" />
+    <!--& ========== End Google Fonts ========== -->
+    <!--& ========== Start Font Awesome Css ========== -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!--& ========== End Font Awesome Css ========== -->
+    <!--& ========== Start Bootstrab Css ========== -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!--& ========== End Bootstrab Css ========== -->
+    <!--& ========== Start Main Css ========== -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--& ========== End Main Css ========== -->
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg padding-nav text-center">
+      <div class="container">
+        <div class="logo d-flex gap-4">
+          <img src="./images/logo@2x.png" alt="Weather Logo" />
+          <div class="info">
+            <h2>Weather</h2>
+            <p>tagline goes here</p>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler toggle"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span><i class="fa-solid fa-bars text-white"></i></span>
+        </button>
+        <div
+          class="collapse navbar-collapse navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 my-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#news">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#liveCameras">Live Cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#photos">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section id="home">
+        <div class="container padding-section">
+          <div class="search position-relative">
+            <input
+              class="w-100"
+              id="locationInput"
+              type="text"
+              placeholder="Find Your Location"
+            />
+            <button class="btn btn-info rounded-pill find-button">Find</button>
+          </div>
+          <div class="row padding-section" id="rowData">
+            <!-- <div class="col-md-4">
+              <div class="card">
+                <div
+                  class="card-head cardHead-color p-2 d-flex justify-content-between align-items-center"
+                >
+                  <span>Thursday</span>
+                  <span>5 December</span>
+                </div>
+                <div class="card-body cardBody-color">
+                  <h4 class="card-title text-capitalize">cairo</h4>
+                  <p class="temperature">16.2*C</p>
+                  <img src="" />
+                  <span class="weather-clear">clear</span>
+                  <div class="static-info d-flex gap-5">
+                    <div class="weather-info">
+                      <span class="icon"
+                        ><i
+                          class="fa-solid fa-umbrella fa-rotate-by"
+                          style="--fa-rotate-angle: 40deg"
+                        ></i
+                      ></span>
+                      <span class="info">20%</span>
+                    </div>
+
+                    <div class="weather-info">
+                      <span class="icon"><i class="fa-solid fa-wind"></i></span>
+                      <span class="info">18km/h</span>
+                    </div>
+                    <div class="weather-info">
+                      <span class="icon"
+                        ><i
+                          class="fa-solid fa-compass fa-rotate-by"
+                          style="--fa-rotate-angle: 50deg"
+                        ></i
+                      ></span>
+                      <span class="info">East</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="padding-footer">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-md-8">
+            <div class="search position-relative">
+              <input
+                class="w-100"
+                id="subscripeInput"
+                type="text"
+                placeholder="Enter your email to subscribe..."
+              />
+              <button class="btn btn-info rounded-pill find-button">
+                Subscribe
+              </button>
+            </div>
+          </div>
+          <div class="col-md-3 offset-md-1">
+            <div class="social-icons d-flex gap-3">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+        <p>Route Academy. Designed by MohammedALi. All rights reserved</p>
+      </div>
+    </footer>
+    <!--^ ========== Start BootStrap Js ========== -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!--^ ========== End BootStrap Js ========== -->
+    <!--^ ========== Start Main Js ========== -->
+    <script src="./js/MainJS.js"></script>
+    <!--^ ========== End Main Js ========== -->
+  </body>
+</html>
+
+<!-- 
+
+<div class="col-md-4">
+  <div class="card">
+    <div
+      class="card-head text-center cardHead-color p-2 d-flex justify-content-center align-items-center"
+    >
+      <span>Thursday</span>
+    </div>
+    <div
+      class="card-body cardBody-color d-flex flex-wrap flex-column align-items-center gap-2"
+    >
+      <img src="./images/116.webp" width="48px" alt="" />
+      <p class="temperature-sections mb-0">16.2*C</p>
+      <p class="smallest-temp">16.1</p>
+      <span class="weather-clear py-0">Partly Cloudy</span>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card">
+    <div
+      class="card-head text-center cardHead-color p-2 d-flex justify-content-center align-items-center"
+    >
+      <span>Thursday</span>
+    </div>
+    <div
+      class="card-body cardBody-color d-flex flex-wrap flex-column align-items-center gap-2"
+    >
+      <img src="./images/116.webp" width="48px" alt="" />
+      <p class="temperature-sections mb-0">16.2*C</p>
+      <p class="smallest-temp">16.1</p>
+      <span class="weather-clear py-0">Partly Cloudy</span>
+    </div>
+  </div>
+</div> -->
